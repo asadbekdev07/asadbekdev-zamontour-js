@@ -1,0 +1,32 @@
+.sitenav {
+  margin-right: 30px;
+}
+
+.sitenav__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.sitenav__link {
+  display: block;
+  line-height: 22.5px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: $primary-bg-color;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $secondary-text-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

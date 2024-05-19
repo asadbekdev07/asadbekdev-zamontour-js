@@ -1,0 +1,31 @@
+.lang-socials__list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.lang-socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.lang-socials__link {
+  display: block;
+  line-height: 22.5px;
+  text-decoration: none;
+  color: $primary-bg-color;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: $secondary-text-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.lang-socials__logo {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
