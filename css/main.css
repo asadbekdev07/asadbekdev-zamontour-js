@@ -403,6 +403,32 @@ img {
   flex-grow: 1;
 }
 
+.button {
+  padding: 13px 30px;
+  margin: 0;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.3 ease;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+  background-color: #22b3c1;
+  color: #ffffff;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.6;
+}
+
 .sitenav {
   margin-right: 30px;
 }
@@ -492,4 +518,77 @@ img {
   display: block;
   width: 17px;
   height: 17px;
+}
+
+.explore {
+  padding: 40px;
+}
+
+.explore__content {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 65px;
+}
+
+.explore__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2a2a2a;
+}
+
+.explore__description {
+  margin: 0;
+  line-height: 30px;
+}
+
+.explore__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 100px;
+}
+
+.explore__item {
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.explore__img {
+  margin-right: 24px;
+  border-radius: 20px;
+}
+
+.explore__inner {
+  width: 50%;
+  position: relative;
+}
+
+.explore__inner-heading {
+  margin: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2a2a2a;
+}
+
+.explore__inner-span {
+  line-height: 30px;
+}
+
+.button__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.explore__inner-description {
+  margin: 0;
+  margin-top: 20px;
+  line-height: 30px;
 }/*# sourceMappingURL=main.css.map */
