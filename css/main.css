@@ -449,6 +449,15 @@ img {
   display: block;
 }
 
+.button--cta {
+  border: 1px solid #e0e0e0;
+}
+.button--cta:hover {
+  background-color: #ffffff;
+  color: #22b3c1;
+  opacity: 1;
+}
+
 .sitenav {
   margin-right: 30px;
 }
@@ -1001,7 +1010,7 @@ img {
   padding: 10px 10px;
   width: 100%;
   border-radius: 25px;
-  border: 1px solid #eeeeee;
+  border: 1px solid #e0e0e0;
   background-color: transparent;
   cursor: pointer;
 }
@@ -1011,4 +1020,37 @@ img {
 
 fieldset {
   border: 0;
+}
+
+.cta {
+  background-image: url("/img/cta-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta__content {
+  color: #ffffff;
+}
+
+.cta__heading {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.cta__subheading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
 }/*# sourceMappingURL=main.css.map */

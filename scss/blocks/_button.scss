@@ -46,3 +46,13 @@
   width: 100%;
   display: block;
 }
+
+.button--cta {
+  border: 1px solid $form-border-color;
+
+  &:hover {
+    background-color: $primary-bg-color;
+    color: $primary-color;
+    opacity: 1;
+  }
+}
