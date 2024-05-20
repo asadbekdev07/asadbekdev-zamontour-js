@@ -11,6 +11,11 @@ html {
   box-sizing: inherit;
 }
 
+:focus {
+  outline: 2px dotted $primary-color;
+  outline-offset: 3px;
+}
+
 body {
   display: flex;
   flex-direction: column;

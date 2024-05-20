@@ -3,6 +3,11 @@
   background-color: $primary-color;
 }
 
+.site-header :focus {
+  outline: 2px dotted #ffffff;
+  outline-offset: 3px;
+}
+
 .site-header__container {
   display: flex;
   align-items: center;

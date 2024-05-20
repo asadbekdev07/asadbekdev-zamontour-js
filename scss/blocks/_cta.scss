@@ -6,6 +6,12 @@
   padding: 80px 0;
 }
 
+.cta :focus {
+  outline: 2px dotted #ffffff;
+  outline-offset: 3px;
+}
+
+
 .cta__container {
   display: flex;
   align-items: center;
@@ -26,8 +32,4 @@
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.5px;
-}
-.button {
-}
-.button--white {
 }
