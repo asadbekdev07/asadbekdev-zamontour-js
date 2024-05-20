@@ -24,9 +24,12 @@
 }
 .explore__item {
   display: flex;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid $border-color;
+
+  &:not(:last-child) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $border-color;
+  }
 }
 .explore__img {
   margin-right: 24px;
