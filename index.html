@@ -7,7 +7,9 @@
 
   <!-- STYLESHEET -->
   <link rel="stylesheet" href="css/main.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -206,13 +208,13 @@
           <p class="location__description">Discover the best  offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.</p>
         </div>
 
-        <div class="loction__cards">
+        <div class="location__cards">
           <!-- ITEM  -->
           <div class="card active" style="background-image: url(img/dubai2.jpg);">
             <div class="card__shadow"></div>
             <div class="card__label">
               <div class="card__icon">
-                <i class="fas fa-expand"></i>
+                <i class="fa fa-expand"></i>
               </div>
               <div class="card__info">
                 <div class="card__title">Dubai</div>
@@ -225,7 +227,7 @@
             <div class="card__shadow"></div>
             <div class="card__label">
               <div class="card__icon">
-                <i class="fas fa-expand"></i>
+                <i class="fa fa-expand"></i>
               </div>
               <div class="card__info">
                 <div class="card__title">Antalya</div>
@@ -238,7 +240,7 @@
             <div class="card__shadow"></div>
             <div class="card__label">
               <div class="card__icon">
-                <i class="fas fa-expand"></i>
+                <i class="fa fa-expand"></i>
               </div>
               <div class="card__info">
                 <div class="card__title">Istanbul</div>
@@ -251,7 +253,7 @@
             <div class="card__shadow"></div>
             <div class="card__label">
               <div class="card__icon">
-                <i class="fas fa-expand"></i>
+                <i class="fa fa-expand"></i>
               </div>
               <div class="card__info">
                 <div class="card__title">Sharm El-Sheik</div>
@@ -264,7 +266,7 @@
             <div class="card__shadow"></div>
             <div class="card__label">
               <div class="card__icon">
-                <i class="fas fa-expand"></i>
+                <i class="fa fa-expand"></i>
               </div>
               <div class="card__info">
                 <div class="card__title">Paris</div>
@@ -274,6 +276,133 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="reservation">
+    <div class="container reservation__container">
+      <div class="reservation__content">
+        <h4 class="reservation__title">Book Prefered Deal Here</h4>
+        <h2 class="reservation__heading">Make your reservation</h2>
+        <a class="button button--white" href="#contact">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex-reservation">
+    <div class="container">
+      <div class="flex-reservation__list">
+        <!-- ITEM  -->
+        <li class="flex-reservation__item">
+            <div class="flex-reservation__icon-wrapper">
+              <i class="fa fa-phone"></i>
+            </div>
+            <h4 class="flex-reservation__subheading">Make a Phone Call</h4>
+            <a class="flex-reservation__link" href="tel:+998992999996">+998 99 299 99 96</a>
+        </li>
+        <!-- ITEM  -->
+        <li class="flex-reservation__item">
+            <div class="flex-reservation__icon-wrapper">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <h4 class="flex-reservation__subheading">Contact Us via Email</h4>
+            <a class="flex-reservation__link" href="mailto:zamonbiznestour@mail.ru">zamonbiznestour@mail.ru</a>
+        </li>
+        <!-- ITEM  -->
+        <li class="flex-reservation__item">
+            <div class="flex-reservation__icon-wrapper">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <h4 class="flex-reservation__subheading">Visit Our Offices</h4>
+            <a class="flex-reservation__link" href="#">15/25, Chilanzar - 9, Tashkent city</a>
+        </li>
+      </div>
+    </div>
+  </section>
+
+  <section class="map">
+    <div class="container">
+      <div>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3252.2562871331756!2d69.19966845675911!3d41.28903224846708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1schilonzor-9%20dom-25!5e1!3m2!1sen!2s!4v1705743542224!5m2!1sen!2s" width="1240px" height="450px" frameborder="0" style="border:0; border-top-left-radius: 23px; border-top-right-radius: 23px;" allowfullscreen=""></iframe>
+    </div>
+    </div>
+  </section>
+
+  <section class="forms">
+    <div class="container forms__container">
+
+      <form id="form__reservation" name="form" method="post" role="search" action="#">
+          <div>
+            <h4  class="form__heading">Make Your <em>Reservation</em> Through This <em>Form</em></h4>
+          </div>
+          <div class="form__flex">
+            <div class="form__flex-grow">
+                <fieldset class="form__column">
+                    <label for="name" class="form__label">Your Name</label>
+                    <input class="form__field" id="name" type="text" name="name" placeholder="Ex. John Smithee" autocomplete="on" required>
+                </fieldset>
+            </div>
+            <div class="form__flex-grow">
+              <fieldset class="form__column">
+                  <label  for="number" class="form__label">Your Phone Number</label>
+                  <input class="form__field" id="number" type="text" name="number" placeholder="Ex. +99899 999 99 99" autocomplete="on" required>
+              </fieldset>
+            </div>
+          </div>
+          <div class="form__flex">
+            <div class="form__flex-grow">
+                <fieldset class="form__column">
+                    <label for="chooseGuests" class="form__label">Number Of Guests</label>
+                    <select name="guests" class="form__field" aria-label="Default select example" id="chooseGuests" onChange="this.form.click()">
+                        <option selected>ex. 3 or 4 or 5</option>
+                        <option type="checkbox" name="option1" value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="form__flex-grow">
+              <fieldset class="form__column">
+                  <label for="date" class="form__label">Check In Date</label>
+                  <input type="date" class="form__field" id="date" name="date" required>
+              </fieldset>
+            </div>
+          </div>
+              <fieldset class="form__column">
+                  <label for="chooseDestination" class="form__label">Choose Your Destination</label>
+                  <select name="Destination" class="form__field" aria-label="Default select example" id="chooseDestination">
+                    <option selected>Antalya</option>
+                    <option value="Istanbul">Istanbul</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
+                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                    <option value="Kanada">Canada</option>
+                    <option value="England">England</option>
+
+                  </select>
+              </fieldset>
+            <fieldset class="form__column">
+                <label for="visa" class="form__label">Choose Your Visa Support</label>
+                <select name="Destination" class="form__field" aria-label="Default select example" id="visa">
+                  <option selected>Country</option>
+                  <option value="USA">USA</option>
+                  <option value="Europe">Europe</option>
+                  <option value="England">England</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Saudiya Arabistoni">Saudi Arabia</option>
+                  <option value="India">India</option>
+                  <option value="China">China</option>
+                  <option value="HongKong">Hong Kong</option>
+                </select>
+            </fieldset>
+
+              <fieldset>
+                  <button class="button button--form">Make Your Reservation Now</button>
+              </fieldset>
+      </form>
+
     </div>
   </section>
 </main>

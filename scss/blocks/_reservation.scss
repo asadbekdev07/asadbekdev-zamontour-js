@@ -1,0 +1,97 @@
+.reservation {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url("/img/heading-bg-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.reservation__container{
+  position: relative;
+
+}
+.reservation__content {
+  text-align: center;
+}
+.reservation__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: $primary-bg-color;
+
+  &::after {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: $grayish-text-color;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50px);
+  }
+}
+.reservation__heading {
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: $primary-bg-color;
+}
+
+.flex-reservation__list {
+  @include list-unstyled;
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: -90px;
+  margin-bottom: 70px;
+}
+.flex-reservation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 400px;
+  background-color: $primary-bg-color;
+  // color: $secondary-text-color;
+  box-shadow: 0px 0px 15px 0px #00000026;
+  border-radius: 25px;
+  color: $primary-color;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.flex-reservation__icon-wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.flex-reservation__link {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.flex-reservation__subheading {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $secondary-text-color;
+}

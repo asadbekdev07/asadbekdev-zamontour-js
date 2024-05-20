@@ -1,0 +1,60 @@
+.form {
+  margin-bottom: 50px;
+}
+.forms__container {
+  padding: 60px 140px;
+  background-color: #f9f9f9;
+}
+
+.form__heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: $secondary-text-color;
+  text-align: center;
+
+  em {
+    color: $primary-color;
+  }
+}
+
+.form__flex {
+  display: flex;
+}
+
+.form__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__flex-grow {
+  flex-grow: 1;
+}
+
+.form__label {
+  margin: 0;
+  margin-bottom: 8px;
+  line-height: 22.5px;
+}
+
+.form__field {
+  margin-bottom: 25px;
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid $border-color;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    border: 2px solid $primary-color;
+  }
+}
+
+
+
+fieldset {
+  border: 0;
+}
