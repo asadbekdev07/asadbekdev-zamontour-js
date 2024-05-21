@@ -30,3 +30,35 @@
     opacity: 0.6;
   }
 }
+
+@include breakpoint-down (900px) {
+  .sitenav {
+    margin: 0;
+  }
+  .sitenav__list {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .sitenav__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid $form-border-color;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .sitenav__link {
+    width: 100%;
+    color: $secondary-text-color;
+  }
+
+  .sitenav__link svg {
+    fill: #1e1e1e;
+  }
+}
