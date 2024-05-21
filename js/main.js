@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .finally(() => {
             setTimeout(() => {
                 statusMessage.remove()
-            }, 1000)
+            }, 10000)
         })
     })
 
