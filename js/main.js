@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             autoPlay();
         });
 
+        // LOCATION-CARD
         const cards = document.querySelectorAll(".card");
 
         cards.forEach((card) => {
@@ -102,4 +103,62 @@ document.addEventListener("DOMContentLoaded", function() {
                 card.classList.add("active");
             });
         });
-    });
+
+        // TELEGRAM
+
+        const form = document.querySelector("form");
+        const telegramTokenBot = "6913787807:AAFBNLiHn-ysNkKEh-bCjIiWCwBDIiqdVLY";
+        const chatId = "6726160029";
+
+        const message = {
+            loading: "Loading...",
+            success: "We're deeply grateful you've entrusted your travel plans to our agency.",
+            failure: "Something went wrong"
+        }
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault()
+
+
+            const statusMessage = document.createElement("div");
+            statusMessage.style.cssText = `
+            color: #22b3c1;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+            `
+            form.append(statusMessage)
+
+            const formData = new FormData(form);
+
+            const object = {}
+            formData.forEach((value, key) => {
+                object[key] = value
+            })
+
+
+            fetch(`https://api.telegram.org/bot${telegramTokenBot}/sendMessage`, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: `
+                Name: ${object.name},
+                Phone: ${object.phone},
+                Number: ${object.number},
+                Date: ${object.date},
+                Destination: ${object.destination},
+                Country: ${object.country},
+                `
+            }),
+        })
+        .then(() => (statusMessage.textContent = message.success), form.reset())
+        .catch(() => (statusMessage.textContent = message.failure))
+        .finally(() => {
+            setTimeout(() => {
+                statusMessage.remove()
+            }, 5000)
+        })
+    })
+
+});
