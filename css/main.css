@@ -560,6 +560,149 @@ img {
   height: 17px;
 }
 
+.sliders {
+  position: relative;
+}
+
+.sliders__input {
+  position: absolute;
+  top: 50%;
+}
+
+.slider__item {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__top {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.slider__top-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.slider__top-city {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 30px 60px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 60px;
+  background-color: #ffffff;
+}
+
+.list__item-inner {
+  display: flex;
+  align-items: center;
+}
+.list__item-inner .fa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid #22b3c1;
+  color: #22b3c1;
+}
+
+.list__subheading {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #22b3c1;
+}
+.list__subheading span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #afafaf;
+}
+
+.controller {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  z-index: 10;
+  bottom: 30px;
+}
+
+.controller__content {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.controller__label {
+  position: relative;
+  display: inline-block;
+  width: 19.5%;
+  height: 3.1em;
+  overflow: hidden;
+  margin: 0 16px;
+  padding-top: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #f6eac5;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.controller__progressbar {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f6eac5;
+  z-index: 1000;
+}
+
+.controller__progressbar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #22b3c1;
+}
+
+.controller__text {
+  display: inline-block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
 .wrapper {
   padding-top: 50px;
   padding-bottom: 80px;

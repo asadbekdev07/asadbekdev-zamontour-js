@@ -1,5 +1,54 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    // MAIN-SLIDER
+    const slides = document.querySelectorAll('.slider__item');
+    const progressBars = document.querySelectorAll('.controller__progressbar-fill');
+    const labels = document.querySelectorAll('.controller__label');
+    const duration = 5000; // Duration for each slide in milliseconds
+
+    let currentIndex = 0;
+    let progressInterval;
+
+    function showSlide(index) {
+        // Hide all slides
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        // Reset all progress bars
+        progressBars.forEach(progressBar => {
+            progressBar.style.width = '0%';
+            progressBar.style.transition = 'none';
+        });
+
+        // Show the current slide
+        slides[index].style.display = 'block';
+        // Animate the progress bar of the current slide
+        progressBars[index].style.transition = `width ${duration}ms linear`;
+        progressBars[index].style.width = '100%';
+    }
+
+    function startSlideshow() {
+        showSlide(currentIndex);
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, duration);
+    }
+
+    // Start the slideshow
+    startSlideshow();
+
+    // Add click event listener to each controller label
+    labels.forEach((label, index) => {
+        label.addEventListener('click', () => {
+            // Show the corresponding slide when the label is clicked
+            showSlide(index);
+            currentIndex = index; // Update current index
+        });
+    });
+
+
     // CAROUSEL
 
     const carousels = document.querySelectorAll(".carousel");
@@ -157,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .finally(() => {
             setTimeout(() => {
                 statusMessage.remove()
-            }, 5000)
+            }, 1000)
         })
     })
 

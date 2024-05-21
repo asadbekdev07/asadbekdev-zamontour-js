@@ -1,0 +1,27 @@
+.slider__item {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider__top {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.slider__top-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: $primary-bg-color;
+}
+.slider__top-city {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  color: $primary-bg-color;
+}
