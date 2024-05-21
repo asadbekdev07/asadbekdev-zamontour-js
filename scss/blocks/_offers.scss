@@ -1,6 +1,7 @@
 .wrapper {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
+	border-bottom: 1px solid $border-color;
 }
 
 .offer__container {
@@ -8,9 +9,10 @@
 }
 
 .offers__content {
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+	text-align: center;
 }
 
 .offers__title {
@@ -39,7 +41,7 @@
 	border-radius: 50%;
 	cursor: pointer;
 	position: absolute;
-	top: 110%;
+	top: 105%;
 	transform: translateY(-50%);
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 
