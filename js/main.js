@@ -206,8 +206,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 chat_id: chatId,
                 text: `
                 Name: ${object.name},
-                Phone: ${object.phone},
-                Number: ${object.number},
+                Phone: ${object.number},
+                Guests: ${object.guests},
                 Date: ${object.date},
                 Destination: ${object.destination},
                 Country: ${object.country},
