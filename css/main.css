@@ -426,6 +426,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
+  text-align: center;
 }
 .button:hover {
   opacity: 0.8;
@@ -1011,7 +1012,7 @@ img {
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc(33.3333333333% - 12px);
+  grid-auto-columns: 33.3333333333%;
   gap: 16px;
   max-height: 500px;
   overflow-x: auto;
@@ -1053,7 +1054,7 @@ img {
   border-radius: 8px;
   display: flex;
   cursor: pointer;
-  width: 98%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -1061,6 +1062,9 @@ img {
 }
 
 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   z-index: 10000;
   width: 275px;
@@ -1081,6 +1085,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 5px;
   position: relative;
   margin-bottom: 26px;
   border-bottom: 1px solid #eee;
@@ -1139,6 +1144,101 @@ img {
   margin-bottom: 15px;
 }
 
+@media only screen and (max-width: 1100px) {
+  .offers__content {
+    width: 55%;
+    margin-bottom: 50px;
+  }
+  .offers__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+  .offers__description {
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .offers__content {
+    width: 55%;
+    margin-bottom: 40px;
+  }
+  .offers__title {
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+  .offers__description {
+    line-height: 23px;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    width: 275px;
+    padding: 25px;
+    border-radius: 22px;
+  }
+  .text h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .wrapper-heading {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  .wrapper-heading h6 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .wrapper-heading span {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .posabsalute {
+    right: -28px;
+  }
+  .ins {
+    font-size: 13px;
+  }
+  .text li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .text li:not(:first-child) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .deal__title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .wrapper ul {
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .wrapper {
+    padding-bottom: 40px;
+  }
+  .wrapper .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .text {
+    width: 80%; /* Each card takes up full width within the slide */
+  }
+  .wrapper .arrow {
+    display: none;
+  }
+  .wrapper .card {
+    height: 300px;
+  }
+}
 .explore {
   padding: 40px;
 }

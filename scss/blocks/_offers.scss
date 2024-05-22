@@ -1,41 +1,41 @@
 .wrapper {
-  padding-top: 50px;
-  padding-bottom: 80px;
+	padding-top: 50px;
+	padding-bottom: 80px;
 	border-bottom: 1px solid $border-color;
 }
 
 .offer__container {
-  position: relative;
+	position: relative;
 }
 
 .offers__content {
-  width: 45%;
-  margin: 0 auto;
-  margin-bottom: 60px;
+	width: 45%;
+	margin: 0 auto;
+	margin-bottom: 60px;
 	text-align: center;
 }
 
 .offers__title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: capitalize;
-  color: $secondary-text-color;
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 36px;
+	text-transform: capitalize;
+	color: $secondary-text-color;
 }
 
 .offers__description {
-  line-height: 30px;
+	line-height: 30px;
 }
 
 .wrapper .arrow {
 	height: 46px;
 	width: 46px;
-  font-size: 20px;
+	font-size: 20px;
 	border: 1px solid $primary-color;
-  background-color: $primary-bg-color;
-  color: $primary-color;
+	background-color: $primary-bg-color;
+	color: $primary-color;
 	text-align: center;
 	line-height: 44px;
 	border-radius: 50%;
@@ -45,10 +45,10 @@
 	transform: translateY(-50%);
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 
-  &:hover {
-    background-color: $primary-color;
-    color: $primary-bg-color;
-  }
+	&:hover {
+		background-color: $primary-color;
+		color: $primary-bg-color;
+	}
 }
 
 .wrapper .arrow:first-child {
@@ -61,19 +61,19 @@
 }
 
 #left {
-  left: 45%;
+	left: 45%;
 }
 
 #right {
-  right: 45%;
+	right: 45%;
 }
 
 .wrapper .carousel {
 	display: grid;
 	grid-auto-flow: column;
-	grid-auto-columns: calc((100% / 3) - 12px);
+	grid-auto-columns: calc(100% / 3);
 	gap: 16px;
-  max-height: 500px;
+	max-height: 500px;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
@@ -111,7 +111,7 @@
 	border-radius: 8px;
 	display: flex;
 	cursor: pointer;
-	width: 98%;
+	width: 80%;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -119,32 +119,36 @@
 }
 
 .text {
-  position: absolute;
-  z-index: 10000;
-  width: 275px;
-  padding: 30px;
-  border-radius: 23px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
-  background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	z-index: 10000;
+	width: 275px;
+	padding: 30px;
+	border-radius: 23px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+	background-color: #fff;
 }
 
 .text h4 {
-  font-size: 20px;
-  line-height: 24px;
-  color: #2a2a2a;
-  margin: 0;
+	font-size: 20px;
+	line-height: 24px;
+	color: #2a2a2a;
+	margin: 0;
 }
 
 .wrapper-heading {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-  position: relative;
+	padding-bottom: 5px;
+	position: relative;
 	margin-bottom: 26px;
 	border-bottom: 1px solid #eee;
 
 	h6 {
-    margin: 0;
+		margin: 0;
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 24px;
@@ -159,9 +163,9 @@
 }
 
 .posabsalute {
-  position: absolute;
-  top: 0;
-  right: -20px;
+	position: absolute;
+	top: 0;
+	right: -20px;
 }
 
 .ins {
@@ -196,5 +200,123 @@
 }
 
 .wrapper ul {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+
+@include breakpoint-down (1100px) {
+	.offers__content {
+		width: 55%;
+		margin-bottom: 50px;
+	}
+
+	.offers__title {
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+		text-transform: capitalize;
+	}
+
+	.offers__description {
+		line-height: 25px;
+	}
+}
+
+@include breakpoint-down (1000px) {
+	.offers__content {
+		width: 55%;
+		margin-bottom: 40px;
+	}
+
+	.offers__title {
+		margin-bottom: 13px;
+		font-weight: 700;
+		font-size: 23px;
+		line-height: 28px;
+		text-transform: capitalize;
+	}
+
+	.offers__description {
+		line-height: 23px;
+	}
+
+	.text {
+		display: flex;
+		align-items: center;
+		width: 275px;
+		padding: 25px;
+		border-radius: 22px;
+	}
+
+	.text h4 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.wrapper-heading {
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+
+		h6 {
+			font-size: 18px;
+			line-height: 20px;
+		}
+
+		span {
+			font-size: 13px;
+			line-height: 15px;
+		}
+	}
+
+	.posabsalute {
+		right: -28px;
+	}
+
+	.ins {
+		font-size: 13px;
+	}
+
+	.text li:not(:last-child) {
+		margin-bottom: 8px;
+	}
+
+	.text li:not(:first-child) {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.deal__title {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.wrapper ul {
+		margin-bottom: 12px;
+	}
+}
+
+@include breakpoint-down (950px) {
+	.wrapper {
+		padding-bottom: 40px;
+	}
+
+	.wrapper .carousel {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+  .text {
+    width: 80%; /* Each card takes up full width within the slide */
+  }
+
+	.wrapper .arrow {
+		display: none;
+	}
+
+	.wrapper .card {
+		height: 300px;
+	}
 }
