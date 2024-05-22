@@ -25,3 +25,48 @@
   font-size: 50px;
   color: $primary-bg-color;
 }
+
+@include breakpoint-down (800px) {
+  .slider__top-heading {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .slider__top-city {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 40px;
+  }
+}
+@include breakpoint-down (600px) {
+  .slider__item {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .slider__top {
+    padding-top: 20px;
+  }
+
+  .slider__top-heading {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .slider__top-city {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    }
+}
+
+@include breakpoint-down (500px) {
+  .slider__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
