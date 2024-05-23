@@ -36,7 +36,7 @@
   border-radius: 20px;
 }
 .explore__inner {
-  width: 50%;
+  width: 75%;
   position: relative;
 }
 .explore__inner-heading {
@@ -61,4 +61,46 @@
   margin: 0;
   margin-top: 20px;
   line-height: 30px;
+}
+
+@include breakpoint-down (1100px) {
+  .explore__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .explore__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .explore__inner {
+    width: 80%;
+  }
+}
+
+@include breakpoint-down (870px) {
+  .explore {
+    padding: 20px;
+  }
+
+  .explore__list {
+    padding-left: 75px;
+  }
+
+  .explore__item {
+    display: flex;
+    margin-bottom: 80px !important;
+  }
+
+  .explore__item:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .button__wrapper {
+    position: absolute;
+    top: 105% !important;
+    left: 0;
+  }
 }

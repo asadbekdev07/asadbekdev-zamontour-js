@@ -1327,7 +1327,7 @@ img {
 }
 
 .explore__inner {
-  width: 50%;
+  width: 75%;
   position: relative;
 }
 
@@ -1356,6 +1356,40 @@ img {
   line-height: 30px;
 }
 
+@media only screen and (max-width: 1100px) {
+  .explore__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .explore__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .explore__inner {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .explore {
+    padding: 20px;
+  }
+  .explore__list {
+    padding-left: 75px;
+  }
+  .explore__item {
+    display: flex;
+    margin-bottom: 80px !important;
+  }
+  .explore__item:not(:last-child) {
+    border-bottom: none;
+  }
+  .button__wrapper {
+    position: absolute;
+    top: 105% !important;
+    left: 0;
+  }
+}
 .visit {
   padding: 40px;
 }
