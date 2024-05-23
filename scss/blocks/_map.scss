@@ -1,5 +1,5 @@
 .map {
-  padding: 10px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -7,7 +7,7 @@
 .map__container {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* Ensure it doesn't exceed the original width */
+  max-width: 1240px; /* Ensure it doesn't exceed the original width */
   padding-bottom: 37.5%; /* 450px / 1200px = 0.375, preserving the aspect ratio */
   height: 0;
   overflow: hidden;
