@@ -25,3 +25,64 @@
   padding-right: 50px;
   margin: 0 auto;
 }
+
+@include breakpoint-down (1150px) {
+  .location {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .location__content {
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .location__cards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include breakpoint-down (1050px) {
+  .location__cards {
+    width: 800px;
+  }
+}
+
+@include breakpoint-down (850px) {
+  .location__cards {
+    width: 600px;
+  }
+}
+
+@include breakpoint-down (650px) {
+  .location__cards {
+    width: 500px;
+  }
+
+  .location__card--none {
+    display: none;
+  }
+}
+
+@include breakpoint-down (550px) {
+  .location {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .location__heading {
+    margin-top: 0;
+  }
+
+  .location__cards {
+    width: 400px;
+  }
+}
+
+@include breakpoint-down (450px) {
+  .location__cards {
+    width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

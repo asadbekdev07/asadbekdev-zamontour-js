@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         // LOCATION-CARD
-        const cards = document.querySelectorAll(".card");
+        const cards = document.querySelectorAll(".location__card");
 
         cards.forEach((card) => {
             card.addEventListener("click", function() {
