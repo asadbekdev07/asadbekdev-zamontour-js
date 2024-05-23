@@ -67,7 +67,7 @@
 @include breakpoint-down (550px) {
   .location {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .location__heading {
