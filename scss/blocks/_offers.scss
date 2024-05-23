@@ -259,17 +259,18 @@
 		margin-bottom: 15px;
 
 		h6 {
-			font-size: 18px;
-			line-height: 20px;
+			font-size: 15px;
+			line-height: 1;
 		}
 
 		span {
-			font-size: 13px;
-			line-height: 15px;
+			font-size: 10px;
+			line-height: 1;
 		}
 	}
 
 	.posabsalute {
+		top: 18px;
 		right: -28px;
 	}
 
@@ -301,6 +302,22 @@
 		padding-bottom: 40px;
 	}
 
+	.wrapper .arrow {
+		height: 40px;
+		width: 40px;
+		font-size: 15px;
+		text-align: center;
+		line-height: 35px;
+	}
+
+	#left {
+		left: 43%;
+	}
+
+	#right {
+		right: 43%;
+	}
+
 	.wrapper .carousel {
 		display: flex;
 		flex-direction: column;
@@ -312,11 +329,48 @@
     width: 80%; /* Each card takes up full width within the slide */
   }
 
-	.wrapper .arrow {
-		display: none;
-	}
+	// .wrapper .arrow {
+	// 	display: none;
+	// }
 
 	.wrapper .card {
 		height: 300px;
+	}
+	.wrapper-heading {
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+
+		h6 {
+			font-size: 15px;
+			line-height: 1;
+		}
+
+		span {
+			font-size: 10px;
+			line-height: 1;
+		}
+	}
+
+	.posabsalute {
+		top: 18px;
+		right: -15px;
+	}
+}
+
+@include breakpoint-down (580px) {
+	.wrapper .arrow {
+		height: 37px;
+		width: 37px;
+		font-size: 14px;
+		text-align: center;
+		line-height: 35px;
+	}
+
+	#left {
+		left: 38%;
+	}
+
+	#right {
+		right: 38%;
 	}
 }
