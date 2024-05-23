@@ -33,3 +33,36 @@
   line-height: 25px;
   letter-spacing: 0.5px;
 }
+
+@include breakpoint-down (800px) {
+  .cta {
+    padding: 40px 0;
+  }
+  .cta__container {
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-down (650px) {
+  .cta__heading {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .cta__subheading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@include breakpoint-down (500px) {
+  .cta__heading {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .cta__subheading {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}

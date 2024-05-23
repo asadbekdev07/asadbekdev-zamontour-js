@@ -2080,6 +2080,36 @@ fieldset {
   letter-spacing: 0.5px;
 }
 
+@media only screen and (max-width: 800px) {
+  .cta {
+    padding: 40px 0;
+  }
+  .cta__container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .cta__heading {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .cta__subheading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cta__heading {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .cta__subheading {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
 .site-footer {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -2101,4 +2131,10 @@ fieldset {
   font-weight: 500;
   text-decoration: none;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .site-footer__text {
+    margin: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -20,3 +20,9 @@
   text-decoration: none;
   color: $primary-bg-color;
 }
+
+@include breakpoint-down (600px) {
+  .site-footer__text {
+    margin: 0;
+  }
+}
