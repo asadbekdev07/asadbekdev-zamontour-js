@@ -1,10 +1,12 @@
 .visit {
   padding: 40px;
 }
+
 .visit__content {
   width: 100%;
-  max-width: 450px;
+  max-width: 650px;
   margin-bottom: 65px;
+  text-align: left;
 }
 .visit__heading {
   margin: 0;
@@ -76,4 +78,81 @@
   padding: 15px 0;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+}
+
+@include breakpoint-down (900px) {
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .visit__img {
+    width: 300px;
+    height: 350px;
+  }
+
+  .button__wrapper {
+    display: none;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .visit__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-left: 10%;
+    // padding-right: 10%;
+  }
+
+  .visit__img {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .visit__inner {
+    width: 80%;
+  }
+}
+
+@include breakpoint-down (700px) {
+  .visit {
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .visit__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .visit__content {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .visit__heading {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .visit__inner-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+}
+
+@include breakpoint-down (450px) {
+  .visit__heading {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
